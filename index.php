@@ -14,10 +14,21 @@ require_once("config.php");
 //echo json_encode($search);
 
 
+//$usuario = new Usuario();
+//$usuario->login("user", "12345");
+//echo $usuario;
+
+
+//$aluno = new Usuario("ratatai", "13342");
+//$aluno->insert();
+//echo $aluno;
+
+
 $usuario = new Usuario();
 
-$usuario->login("user", "12345");
+$usuario->findById(4);
 
+$usuario->update("jamaica", "242405");
 echo $usuario;
 
 
