@@ -1,10 +1,24 @@
 <?php
 require_once("config.php");
 	
-	$user = new Usuario();
+//	$user = new Usuario(); 
+//	$user->findById(1);
+//	echo $user;
 
-	$user->findById(1);
+	
+//	$list = Usuario::getList();
+//	echo json_encode($list);
 
-	echo $user;
+
+//$search = Usuario::findByLogin("user");
+//echo json_encode($search);
+
+
+$usuario = new Usuario();
+
+$usuario->login("user", "12345");
+
+echo $usuario;
+
 
 ?>
