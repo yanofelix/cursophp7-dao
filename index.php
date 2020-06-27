@@ -24,12 +24,18 @@ require_once("config.php");
 //echo $aluno;
 
 
+//$usuario = new Usuario();
+//$usuario->findById(4);
+//$usuario->update("jamaica", "242405");
+//echo $usuario;
+
+
 $usuario = new Usuario();
-
-$usuario->findById(4);
-
-$usuario->update("jamaica", "242405");
+$usuario->findById(6);
+$usuario->delete();
 echo $usuario;
+
+
 
 
 ?>
